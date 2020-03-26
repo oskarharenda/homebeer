@@ -10,5 +10,6 @@ nazwa: ${recipe.name}
 składniki: ${recipe.ingredients}
 opis: ${recipe.description}
 utworzono: ${recipe.createdDate}
+
 </body>
 </html>

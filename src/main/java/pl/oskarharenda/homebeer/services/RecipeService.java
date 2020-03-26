@@ -51,4 +51,7 @@ public class RecipeService {
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
         return recipeRepository.findAllByUserUsername(username);
     }
+    public Optional<Recipe> findById(Long id){
+        return recipeRepository.findById(id);
+    }
 }

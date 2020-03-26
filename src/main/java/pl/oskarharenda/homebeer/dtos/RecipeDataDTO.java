@@ -8,6 +8,7 @@ import java.util.Date;
 @Data
 public class RecipeDataDTO {
 
+
     private String name;
     private String ingredients;
     private String description;

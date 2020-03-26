@@ -6,16 +6,16 @@
     <title>Title</title>
 </head>
 <body>
-<form:form modelAttribute="recipes" method="post" action="/opinion/add">
 <c:forEach var="name" items="${recipes}">
 
+    <form:form modelAttribute="recipes" method="get">
     nazwa: ${name.name}
     opis: ${name.description}
     składniki: ${name.ingredients}
-    <p><button type="submit">dodaj opinie </button> </p>
-    <br>
+    <p><button type="submit" formaction="/opinion/add/${name.id}">dodaj opinie </button> </p>
+        <br>
+    </form:form>
 
 </c:forEach>
-</form:form>
 </body>
 </html>
