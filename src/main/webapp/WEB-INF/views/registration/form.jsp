@@ -6,6 +6,7 @@
     <title>Title</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/">strona startowa</a><br>
 <form:form modelAttribute="data" method="post" action="/register">
     <p>Nazwa Urzytkownika: <form:input path="username"/></p>
     <p>Email:<form:input path="email"/></p>

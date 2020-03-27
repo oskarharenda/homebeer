@@ -12,6 +12,7 @@
 </head>
 <body>
 Dodano opinię do przepisu: ${recipe.name}<br><br>
+<a href="${pageContext.request.contextPath}/">strona startowa</a><br>
 <a href="${pageContext.request.contextPath}/recipe/all">Zobacz wszystkie przepisy</a><br>
 <a href="${pageContext.request.contextPath}/recipe/user">Zobacz swoje przepisy</a><br><br>
 </body>

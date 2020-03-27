@@ -6,6 +6,7 @@
     <title>login</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/">strona startowa</a><br>
 <c:if test="${not empty param.logout}">
     <p>Zostałeś wylogowany</p>
 </c:if>

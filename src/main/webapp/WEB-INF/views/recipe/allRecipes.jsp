@@ -6,6 +6,7 @@
     <title>Title</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/">strona startowa</a><br>
 <a href="${pageContext.request.contextPath}/recipe/user">Zobacz swoje przepisy</a><br><br>
 <c:forEach var="name" items="${recipes}">
 
