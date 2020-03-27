@@ -14,5 +14,6 @@ public class RecipeDataDTO {
     private String description;
     private User user;
     private Date createdDate;
+    private Double avgNotes;
 
 }
