@@ -15,7 +15,7 @@ import java.util.List;
 @Table(name="recipes")
 @Getter
 @Setter
-@ToString(exclude = "user")
+@ToString(exclude = {"user", "opinions"})
 @EqualsAndHashCode(of="id")
 public class Recipe {
     @Id
@@ -41,6 +41,15 @@ public class Recipe {
     @CreatedDate
     @Column(name = "created_date")
     private Date createdDate;
+
+    private double avgNote() {
+        double sum = 0;
+        for (Opinion o : opinions) {
+            sum += o.getNote();
+        }
+        double avg = sum / opinions.size();
+        return avg;
+    }
 
 
 

@@ -8,14 +8,21 @@
 <body>
 <c:forEach var="name" items="${recipes}">
 
+
+
+</c:forEach>
+
+<c:forEach items="${recipes2}" var="recipe">
+
     <form:form modelAttribute="recipes" method="get">
-    nazwa: ${name.name}
-    opis: ${name.description}
-    składniki: ${name.ingredients}
-    <p><button type="submit" formaction="/opinion/add/${name.id}">dodaj opinie </button> </p>
+        nazwa: ${recipe.key.name}
+        opis: ${recipe.key.description}
+        składniki: ${recipe.key.ingredients}
+        <br>
+        Średnia ocena: ${recipe.value}
+        <p><button type="submit" formaction="/opinion/add/${recipe.key.id}">opinie </button> </p>
         <br>
     </form:form>
-
 </c:forEach>
 </body>
 </html>
