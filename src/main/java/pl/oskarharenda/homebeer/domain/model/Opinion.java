@@ -2,7 +2,6 @@ package pl.oskarharenda.homebeer.domain.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;

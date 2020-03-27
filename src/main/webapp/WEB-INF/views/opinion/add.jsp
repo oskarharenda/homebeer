@@ -6,6 +6,8 @@
     <title>addOpinion</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/recipe/all">Zobacz wszystkie przepisy</a><br>
+<a href="${pageContext.request.contextPath}/recipe/user">Zobacz swoje przepisy</a><br><br>
 Przpis ${recipe.name}
 <br>
 Opis: ${recipe.description}

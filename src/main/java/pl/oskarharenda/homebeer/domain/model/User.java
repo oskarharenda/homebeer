@@ -16,7 +16,7 @@ import java.util.List;
 @Table(name="users")
 @Getter
 @Setter
-@ToString(exclude ={"password", "recipes"} )
+@ToString(exclude ={"password", "recipes", "opinions"} )
 @EqualsAndHashCode(of="id")
 public class User {
     @Id

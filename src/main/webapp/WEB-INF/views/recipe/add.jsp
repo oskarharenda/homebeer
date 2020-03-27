@@ -5,6 +5,8 @@
     <title>Add</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/recipe/all">Zobacz wszystkie przepisy</a><br>
+<a href="${pageContext.request.contextPath}/recipe/user">Zobacz swoje przepisy</a><br><br>
 dodawanie przpisu:
 <form:form modelAttribute="data" method="post" action="/recipe/add">
     <p>nazwa przepisu: <form:input path="name"/></p>

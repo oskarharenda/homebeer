@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/recipe/user">Zobacz swoje przepisy</a><br><br>
 <table>
     <tr>
     <th>nazwa</th>

@@ -14,11 +14,10 @@ public class HomePageController {
 
     @GetMapping
     public String prepareHomePage(Model model, Principal principal){
-        // dwie opcje dostanie się do urzytkownika zalogowanego
-        String username = principal.getName();
-        String username2 = SecurityContextHolder.getContext().getAuthentication().getName();
-        model.addAttribute("username1",username);
-        model.addAttribute("username2",username2);
+        if(principal!=null){
+            String username = principal.getName();
+            model.addAttribute("username1",username);
+        }
         return "home/main";
     }
 }
