@@ -41,16 +41,4 @@ public class Recipe {
     @CreatedDate
     @Column(name = "created_date")
     private Date createdDate;
-
-    private double avgNote() {
-        double sum = 0;
-        for (Opinion o : opinions) {
-            sum += o.getNote();
-        }
-        double avg = sum / opinions.size();
-        return avg;
-    }
-
-
-
 }

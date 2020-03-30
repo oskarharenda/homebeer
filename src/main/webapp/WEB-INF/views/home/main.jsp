@@ -9,7 +9,8 @@
     Witaj: ${username1}
     <br>
     <a href="${pageContext.request.contextPath}/recipe/all">Zobacz wszystkie przepisy</a><br>
-    <a href="${pageContext.request.contextPath}/recipe/user">Zobacz swoje przepisy</a><br><br>
+    <a href="${pageContext.request.contextPath}/recipe/user">Zobacz swoje przepisy</a><br>
+    <a href="${pageContext.request.contextPath}/recipe/add">Dodaj przepis</a><br>
 
 
 </security:authorize>
